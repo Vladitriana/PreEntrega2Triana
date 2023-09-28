@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2? familia= Poppins:wght@300;400 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex ;
+    min-height: 70px;
+    justify-content: left;
+    padding: 10 px;
+}
+
+.logo__img{
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav {
+    width: 300px;
+}
+
+.nav__link{
+    color: #303440;
+    display: flow-root;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+
+.nav__link--inside:hover{
+    background: #f6f8fa;
+}
+
+.list{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: white;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.list__arrow{
+    margin-left: auto ;
+}
+
+.list__show{
+    width: 40%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+body {
+    background-image: url("../Assets/Imagenes/space.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+@media (max-width:400px){
+    header{
+        flex-direction: column;
+    }
+    .list__item{
+        padding: 10px 0px;
+    }
+}
+
+.head_form{
+    display: flex;
+    min-height: 70px;
+    justify-content: center;
+    padding: 10 px;
+}
+
+.form-registro{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    padding: 70px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    color: rgb(51, 49, 49);
+}
+
+.form-registro h4{
+    font-size: 22px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.controls {
+    width: 100%;
+    background: rgb(233, 230, 230);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16pix;
+    border: 1px solid #303440;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.form-registro a{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.form-registro a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.form-registro .Botons{
+    width: 100%;
+    background: cornflowerblue;
+    border: 1px solid #303440;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-registro .Botons:hover{
+    color: red;
+    text-decoration: underline;
+}
+.text_parrafo1 {
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    color: rgb(51, 49, 49);
+}
+
+.text_parrafo1 h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.text_parrafo1 p{
+    height: 250px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text_parrafo1 a{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.text_parrafo1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+@media (max-width:700px){
+    .head_form{
+        flex-direction:column;
+    }
+    .form-registro{
+        padding: 10px 0px;
+    }
+}
